@@ -1,0 +1,86 @@
+{
+  "id": "a7417ab8-c31a-49f7-8f4a-5d0144db671a",
+  "name": "first intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "guessFlower",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "b7e14578-94b3-4f59-93ec-d76614628c08",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "sLength",
+          "value": "$sLength",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "please tell me what is the length of sepal"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "99043610-c2f6-4f93-b272-bb35bc9a8503",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "pLength",
+          "value": "$pLength",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "what is the length of petal"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "f3ac9cb6-02f3-4639-9179-072d76a43f5b",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "sWidth",
+          "value": "$sWidth",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "tell me the width of sepal"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "bfd37109-d013-442d-a84a-6c1c10fbdc6e",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "pWidth",
+          "value": "$pWidth",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "what is the width of petal"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "you said width of petal is $pWidth and length is $pLength and width of sepal length is $sLength and length is $sWidth"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1514208162,
+  "fallbackIntent": false,
+  "events": []
+}
